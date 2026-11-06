@@ -1,0 +1,35 @@
+TEAM 06 — CARD A1 CHECKPOINT SMOKE TEST
+Started: 2026-11-06 11:36:27 IST
+Python: 3.13.15 | Platform: Linux-7.2.8-1-default-x86_64-with-glibc2.44
+Repository: /home/shaenpai/Documents/A1-bearing
+Policy: validation only; test partition is inference-only; no test labels/metrics.
+
+NumPy 2.5.4; SciPy 1.18.1; scikit-learn 1.9.1; PyTorch 2.15.0+cu132
+[PASS] environment: 1.64s — scientific stack imports and CPU torch initialization passed
+[PASS] split manifests: 0.01s — manifests readable; CWRU rows=885, Paderborn rows=8703
+[PASS] raw dataset inventory: 0.00s — CWRU MAT files=17; Paderborn RAR archives=14; extracted directory present
+[PASS] CWRU processed split arrays: 0.01s — source load 0 hp arrays: train=32, val=27, test-inference=8
+[PASS] Paderborn processed split arrays: 0.46s — bearing-disjoint arrays available; smoke subset train=8, val=8, test-inference=8
+[PASS] CWRU envelope baseline: 0.21s — feature shape=(24, 11); validation predictions=8; no test labels accessed
+[PASS] Paderborn envelope baseline: 0.48s — feature shape=(8, 8); validation predictions=8; no test labels accessed
+[PASS] Paderborn 1-D CNN: 1.30s — {'train_loss': 1.123818278312683, 'validation_loss': 1.0378682613372803, 'validation_samples': 8, 'unscored_inference_samples': 8, 'test_labels_loaded': False}
+[PASS] CWRU 2-D CNN no-attention ablation: 0.09s — {'train_loss': 1.3923474550247192, 'validation_loss': 1.372031331062317, 'validation_samples': 27, 'unscored_inference_samples': 8, 'test_labels_loaded': False}
+[PASS] CWRU 2-D CNN frequency-attention: 0.10s — {'train_loss': 1.3879157304763794, 'validation_loss': 1.3868507146835327, 'validation_samples': 27, 'unscored_inference_samples': 8, 'test_labels_loaded': False}
+[PASS] 1-D + 2-D validation-weighted fusion: 0.08s — validation-selected alpha_1d=0.550; validation macro-F1=0.1481; output=(27, 4)
+
+COMPONENT SUMMARY
+PASS |     1.64s | environment | scientific stack imports and CPU torch initialization passed
+PASS |     0.01s | split manifests | manifests readable; CWRU rows=885, Paderborn rows=8703
+PASS |     0.00s | raw dataset inventory | CWRU MAT files=17; Paderborn RAR archives=14; extracted directory present
+PASS |     0.01s | CWRU processed split arrays | source load 0 hp arrays: train=32, val=27, test-inference=8
+PASS |     0.46s | Paderborn processed split arrays | bearing-disjoint arrays available; smoke subset train=8, val=8, test-inference=8
+PASS |     0.21s | CWRU envelope baseline | feature shape=(24, 11); validation predictions=8; no test labels accessed
+PASS |     0.48s | Paderborn envelope baseline | feature shape=(8, 8); validation predictions=8; no test labels accessed
+PASS |     1.30s | Paderborn 1-D CNN | {'train_loss': 1.123818278312683, 'validation_loss': 1.0378682613372803, 'validation_samples': 8, 'unscored_inference_samples': 8, 'test_labels_loaded': False}
+PASS |     0.09s | CWRU 2-D CNN no-attention ablation | {'train_loss': 1.3923474550247192, 'validation_loss': 1.372031331062317, 'validation_samples': 27, 'unscored_inference_samples': 8, 'test_labels_loaded': False}
+PASS |     0.10s | CWRU 2-D CNN frequency-attention | {'train_loss': 1.3879157304763794, 'validation_loss': 1.3868507146835327, 'validation_samples': 27, 'unscored_inference_samples': 8, 'test_labels_loaded': False}
+PASS |     0.08s | 1-D + 2-D validation-weighted fusion | validation-selected alpha_1d=0.550; validation macro-F1=0.1481; output=(27, 4)
+TOTAL ELAPSED: 4.39s
+TEST PARTITION: no labels loaded; inference-only forwards only.
+NOTE: this is a bounded smoke test, not a scored test evaluation or full experiment.
+OVERALL: PASS (11 passed, 0 failed)

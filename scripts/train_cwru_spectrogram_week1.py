@@ -143,10 +143,47 @@ def load_source_load(source_load):
 # MODEL
 # ============================================================
 
+class FrequencyAttention(nn.Module):
+    """
+    Learns weights along the frequency axis of a spectrogram.
+
+    Input:  (batch, channels, frequency, time)
+    Output: same shape, frequency-weighted.
+    """
+
+    def __init__(self, kernel_size=5):
+        super().__init__()
+
+        self.attention = nn.Conv1d(
+            in_channels=1,
+            out_channels=1,
+            kernel_size=kernel_size,
+            padding=kernel_size // 2,
+            bias=True,
+        )
+
+        self.activation = nn.Sigmoid()
+
+    def forward(self, x):
+        # Average over channels and time, retaining frequency.
+        frequency_summary = x.mean(dim=(1, 3)).unsqueeze(1)
+
+        weights = self.activation(
+            self.attention(frequency_summary)
+        )
+
+        return x * weights.unsqueeze(-1)
+
+
 class Small2DCNN(nn.Module):
 
-    def __init__(self):
+    def __init__(self, use_attention=False):
         super().__init__()
+
+        self.use_attention = use_attention
+
+        if use_attention:
+            self.frequency_attention = FrequencyAttention()
 
         self.features = nn.Sequential(
             nn.Conv2d(1, 16, kernel_size=3, padding=1),
@@ -166,8 +203,13 @@ class Small2DCNN(nn.Module):
         self.classifier = nn.Linear(64, N_CLASSES)
 
     def forward(self, x):
+
+        if self.use_attention:
+            x = self.frequency_attention(x)
+
         x = self.features(x)
         x = x.flatten(1)
+
         return self.classifier(x)
 
 

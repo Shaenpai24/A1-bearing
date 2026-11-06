@@ -1,0 +1,13 @@
+run_id,date,commit,component,condition,seed,n_train,epochs,updates,stop_reason,elapsed_s,cpu_s,peak_mem_mb,threads,workers,trainable_params,val_metric,val_value,best_epoch,test_scored
+C1D-0,,,1d,CWRU source 0 hp,22,118,30,90,epoch_limit,7.31,,,,,56260,macro_f1,0.714286,30,false
+C1D-1,,,1d,CWRU source 1 hp,22,136,30,90,epoch_limit,8.07,,,,,56260,macro_f1,1.0,30,false
+C1D-2,,,1d,CWRU source 2 hp,22,136,30,90,epoch_limit,7.96,,,,,56260,macro_f1,1.0,30,false
+C1D-3,,,1d,CWRU source 3 hp,22,137,30,90,epoch_limit,8.69,,,,,56260,macro_f1,1.0,30,false
+C2D-0,,,2d,CWRU source 0 hp no-attention,22,118,30,60,epoch_limit,8.0335,,,6,4,23556,val_loss,0.187566,30,false
+PB1D,,,core2,Paderborn artificial-damage source validation,22,3116,6,294,early_stopping,43.7721,,,6,4,56131,val_loss,3.880205,1,false
+CENV-0,,,baseline,CWRU source 0 hp,22,118,,,,0.5997,,,,,,macro_f1,1.0,,false
+CENV-1,,,baseline,CWRU source 1 hp,22,136,,,,0.6132,,,,,,macro_f1,1.0,,false
+CENV-2,,,baseline,CWRU source 2 hp,22,136,,,,0.6250,,,,,,macro_f1,1.0,,false
+CENV-3,,,baseline,CWRU source 3 hp,22,137,,,,0.5984,,,,,,macro_f1,1.0,,false
+PENV,,,baseline,Paderborn envelope baseline,22,2613,,,,1.7343,,,,,,macro_f1,0.166747,,true
+FUSION,,,fusion,CWRU validation-weighted 1D+2D smoke,,,,,none,0.08,,,,,,macro_f1,0.1481,,false
