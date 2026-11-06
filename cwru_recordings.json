@@ -1,0 +1,399 @@
+[
+ {
+  "label": "Normal_0",
+  "file": "97.mat",
+  "bytes": 3903344,
+  "sha256": "16bf48babcf1c7ac224bc1a81cd9eafdb27e42d5cf559761907e067e8eeadf3c",
+  "variables": [
+   "X097_DE_time",
+   "X097_FE_time",
+   "X097RPM"
+  ],
+  "de_key": "X097_DE_time",
+  "native_hz": 48000,
+  "n_native": 243938,
+  "n_12k": 60985,
+  "seconds": 5.08,
+  "rpm_field": 1796.0,
+  "de_all_finite": true,
+  "de_std": 0.0727,
+  "windows": {
+   "train": 16,
+   "val": 3,
+   "test": 4
+  }
+ },
+ {
+  "label": "Normal_1",
+  "file": "98.mat",
+  "bytes": 7742720,
+  "sha256": "37e6612c05e65c415dcfa2ab27a3fda648a5863160fa898b884a14743044e045",
+  "variables": [
+   "X098_DE_time",
+   "X098_FE_time"
+  ],
+  "de_key": "X098_DE_time",
+  "native_hz": 48000,
+  "n_native": 483903,
+  "n_12k": 120976,
+  "seconds": 10.08,
+  "rpm_field": null,
+  "de_all_finite": true,
+  "de_std": 0.0652,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "Normal_2",
+  "file": "99.mat",
+  "bytes": 15503928,
+  "sha256": "4b97e6b5361f45efb6951dc3b1aebcdb3b89cb69d0f96d6f5c297dd9f45eee75",
+  "variables": [
+   "ans",
+   "X098_DE_time",
+   "X098_FE_time",
+   "X099_DE_time",
+   "X099_FE_time"
+  ],
+  "de_key": "X099_DE_time",
+  "native_hz": 48000,
+  "n_native": 485063,
+  "n_12k": 121266,
+  "seconds": 10.11,
+  "rpm_field": null,
+  "de_all_finite": true,
+  "de_std": 0.0631,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "Normal_3",
+  "file": "100.mat",
+  "bytes": 7770624,
+  "sha256": "88a5990cb541320e91505a1d72139e1993500ffe6e292a451011667f4138ca78",
+  "variables": [
+   "X100_DE_time",
+   "X100_FE_time",
+   "X100RPM"
+  ],
+  "de_key": "X100_DE_time",
+  "native_hz": 48000,
+  "n_native": 485643,
+  "n_12k": 121411,
+  "seconds": 10.12,
+  "rpm_field": 1725.0,
+  "de_all_finite": true,
+  "de_std": 0.0647,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "IR007_0",
+  "file": "105.mat",
+  "bytes": 2910768,
+  "sha256": "f80b0ea04fd06b372a0eaec7c056543ea37e4bb4727a5b173d2a5bacd2aa9cab",
+  "variables": [
+   "X105_DE_time",
+   "X105_FE_time",
+   "X105_BA_time",
+   "X105RPM"
+  ],
+  "de_key": "X105_DE_time",
+  "native_hz": 12000,
+  "n_native": 121265,
+  "n_12k": 121265,
+  "seconds": 10.11,
+  "rpm_field": 1797.0,
+  "de_all_finite": true,
+  "de_std": 0.2912,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "IR007_1",
+  "file": "106.mat",
+  "bytes": 2928192,
+  "sha256": "e5cec7cdd138e6cd1deb9ed8634e5aaa9bc1bd7094ddc075bff606580eb6e883",
+  "variables": [
+   "X106_DE_time",
+   "X106_FE_time",
+   "X106_BA_time",
+   "X106RPM"
+  ],
+  "de_key": "X106_DE_time",
+  "native_hz": 12000,
+  "n_native": 121991,
+  "n_12k": 121991,
+  "seconds": 10.17,
+  "rpm_field": 1772.0,
+  "de_all_finite": true,
+  "de_std": 0.2928,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "IR007_2",
+  "file": "107.mat",
+  "bytes": 2931672,
+  "sha256": "111ba8996a115684661a13c913bd74d8029a59294492f88aec7b03e175fdd388",
+  "variables": [
+   "X107_DE_time",
+   "X107_FE_time",
+   "X107_BA_time",
+   "X107RPM"
+  ],
+  "de_key": "X107_DE_time",
+  "native_hz": 12000,
+  "n_native": 122136,
+  "n_12k": 122136,
+  "seconds": 10.18,
+  "rpm_field": 1748.0,
+  "de_all_finite": true,
+  "de_std": 0.2995,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "IR007_3",
+  "file": "108.mat",
+  "bytes": 2950416,
+  "sha256": "d415f0e65128bfa0b118c2051c988fb0dc6ce3e4c8aa45fdc5ad1d0967462e7d",
+  "variables": [
+   "X108_DE_time",
+   "X108_FE_time",
+   "X108_BA_time",
+   "X108RPM"
+  ],
+  "de_key": "X108_DE_time",
+  "native_hz": 12000,
+  "n_native": 122917,
+  "n_12k": 122917,
+  "seconds": 10.24,
+  "rpm_field": 1721.0,
+  "de_all_finite": true,
+  "de_std": 0.3136,
+  "windows": {
+   "train": 35,
+   "val": 10,
+   "test": 11
+  }
+ },
+ {
+  "label": "B007_0",
+  "file": "118.mat",
+  "bytes": 2942112,
+  "sha256": "b00628f8dd8d1d930af77fa465d1e5cdb385fe259489053f91f3680bda7f640e",
+  "variables": [
+   "X118_DE_time",
+   "X118_FE_time",
+   "X118_BA_time",
+   "X118RPM"
+  ],
+  "de_key": "X118_DE_time",
+  "native_hz": 12000,
+  "n_native": 122571,
+  "n_12k": 122571,
+  "seconds": 10.21,
+  "rpm_field": 1796.0,
+  "de_all_finite": true,
+  "de_std": 0.1387,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "B007_1",
+  "file": "119.mat",
+  "bytes": 2914248,
+  "sha256": "bc72d9df7668219e004a0f711232b23ec0aed393eb9bd8f9f5483426f6b51330",
+  "variables": [
+   "X119_DE_time",
+   "X119_FE_time",
+   "X119_BA_time",
+   "X119RPM"
+  ],
+  "de_key": "X119_DE_time",
+  "native_hz": 12000,
+  "n_native": 121410,
+  "n_12k": 121410,
+  "seconds": 10.12,
+  "rpm_field": 1772.0,
+  "de_all_finite": true,
+  "de_std": 0.139,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "B007_2",
+  "file": "120.mat",
+  "bytes": 2917752,
+  "sha256": "e0b7a584c49af52335ff0904a97d4afcf02d045625c582de63a7c85ce10b489c",
+  "variables": [
+   "X120_DE_time",
+   "X120_FE_time",
+   "X120_BA_time",
+   "X120RPM"
+  ],
+  "de_key": "X120_DE_time",
+  "native_hz": 12000,
+  "n_native": 121556,
+  "n_12k": 121556,
+  "seconds": 10.13,
+  "rpm_field": 1748.0,
+  "de_all_finite": true,
+  "de_std": 0.1472,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "B007_3",
+  "file": "121.mat",
+  "bytes": 2917752,
+  "sha256": "52f686e984ba8e9b04a047a57416271cdb322cee57ee105dce58926a24b966cb",
+  "variables": [
+   "X121_DE_time",
+   "X121_FE_time",
+   "X121_BA_time",
+   "X121RPM"
+  ],
+  "de_key": "X121_DE_time",
+  "native_hz": 12000,
+  "n_native": 121556,
+  "n_12k": 121556,
+  "seconds": 10.13,
+  "rpm_field": 1722.0,
+  "de_all_finite": true,
+  "de_std": 0.1536,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "OR007@6_0",
+  "file": "130.mat",
+  "bytes": 2928192,
+  "sha256": "35a095307d0971477049b343a1b5981dde465a58fb7f233ad89b035068c1717d",
+  "variables": [
+   "X130_DE_time",
+   "X130_FE_time",
+   "X130_BA_time",
+   "X130RPM"
+  ],
+  "de_key": "X130_DE_time",
+  "native_hz": 12000,
+  "n_native": 121991,
+  "n_12k": 121991,
+  "seconds": 10.17,
+  "rpm_field": 1796.0,
+  "de_all_finite": true,
+  "de_std": 0.6691,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "OR007@6_1",
+  "file": "131.mat",
+  "bytes": 2938632,
+  "sha256": "7883f7b83beadc54b2f301767f9145ce07055707182fb0278fdf0a6bb53ce3cb",
+  "variables": [
+   "X131_DE_time",
+   "X131_FE_time",
+   "X131_BA_time",
+   "X131RPM"
+  ],
+  "de_key": "X131_DE_time",
+  "native_hz": 12000,
+  "n_native": 122426,
+  "n_12k": 122426,
+  "seconds": 10.2,
+  "rpm_field": 1773.0,
+  "de_all_finite": true,
+  "de_std": 0.5919,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "OR007@6_2",
+  "file": "132.mat",
+  "bytes": 2914248,
+  "sha256": "17a69ed5d2270b42532e678e35bbe2fa04a2cc413cf2bf9e88c7692de8662d18",
+  "variables": [
+   "X132_DE_time",
+   "X132_FE_time",
+   "X132_BA_time",
+   "X132RPM"
+  ],
+  "de_key": "X132_DE_time",
+  "native_hz": 12000,
+  "n_native": 121410,
+  "n_12k": 121410,
+  "seconds": 10.12,
+  "rpm_field": 1750.0,
+  "de_all_finite": true,
+  "de_std": 0.5702,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ },
+ {
+  "label": "OR007@6_3",
+  "file": "133.mat",
+  "bytes": 2942112,
+  "sha256": "53f076cb0d905cf46bffaee7736abce8224ffed777deed03c0c863d762a90c71",
+  "variables": [
+   "X133_DE_time",
+   "X133_FE_time",
+   "X133_BA_time",
+   "X133RPM"
+  ],
+  "de_key": "X133_DE_time",
+  "native_hz": 12000,
+  "n_native": 122571,
+  "n_12k": 122571,
+  "seconds": 10.21,
+  "rpm_field": 1725.0,
+  "de_all_finite": true,
+  "de_std": 0.5804,
+  "windows": {
+   "train": 34,
+   "val": 9,
+   "test": 10
+  }
+ }
+]

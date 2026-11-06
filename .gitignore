@@ -1,0 +1,61 @@
+cd ~/Documents/A1-bearing
+
+cat > .gitignore <<'EOF'
+# Python environments
+venv/
+.venv/
+env/
+
+# Python caches and temporary files
+__pycache__/
+*.py[cod]
+*.pyo
+*.swp
+*.swo
+*~
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Raw and extracted datasets
+data/raw/
+data/extracted/
+data/processed/
+
+# Large arrays, recordings, and model checkpoints
+*.mat
+*.rar
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.hdf5
+
+# Generated archives
+T06_A1_repo_checkpoint.zip
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+
+# Local datasets and archives
+/A1-bearing.zip
+/venv/
+
+# Generated inspection and temporary files
+*.swp
+*.pdf
+paderborn_inspection.txt
+
+# Model outputs
+runs/**/best_validation_checkpoint.pt
