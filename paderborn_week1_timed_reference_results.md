@@ -52,7 +52,7 @@ Linear(128 -> 3)
 
   --------------------------------------------------------------------------------
        Epoch Train loss   Validation      Train   Validation Epoch time    Updates
-                                loss   accuracy     accuracy            
+                                loss   accuracy     accuracy
   ---------- ---------- ------------ ---------- ------------ ---------- ----------
            1   0.550008     3.880205     0.7689       0.3328     8.46 s         49
 
